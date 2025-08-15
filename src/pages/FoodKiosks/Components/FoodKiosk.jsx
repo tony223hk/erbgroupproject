@@ -1,4 +1,4 @@
-const Restaurant = 
+const FoodKiosk= 
 ({name, maininfo, image, location, 
   itemimage1, iteminfo1, itemprice1, 
   itemimage2, iteminfo2, itemprice2, 
@@ -31,9 +31,8 @@ const Restaurant =
               </div>
             </div>
           </div> 
-          <button class="button"><span>Booking Now</span></button>
     </div>   
   );
 };
 
-export default Restaurant;
+export default FoodKiosk;
