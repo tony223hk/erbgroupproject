@@ -31,7 +31,8 @@ li {
     text-align: center;
 }
 
-.cards {
+.restaurant-cards,
+.foodkiosk-cards {
     width: 100%;
     display: grid;
     grid-template-columns: 1fr 1fr;
@@ -40,26 +41,31 @@ li {
     justify-content: center;
 }
 
-.card {
+.restaurant-card,
+.foodkiosk-card {
   padding: 5px;
   box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
   transition: 0.3s;
 }
 
-.card:hover {
+.restaurant-card:hover,
+.foodkiosk-card:hover {
   box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
 }
 
-.card-container {
+.restaurant-card-container,
+.foodkiosk-card-container {
     background-color: lavender;
     padding: 15px 16px;
     border: 20px solid #FFFFFF;
 }
 
-.card-img {
+.restaurant-card-img,
+.foodkiosk-card-img {
     position: relative;
     width: 100%;
     border: 20px solid #FFFFFF;
+    z-index: 1;
     p {
         font-size: 1.8rem;
         position: absolute;
@@ -71,72 +77,293 @@ li {
     }
 }
 
-.image {
+.restaurant-image, 
+.foodkiosk-image {
   width: 100%;
 }
 
-.itemimage {
+.restaurant-itemimage, 
+.foodkiosk-itemimage {
   width: 98%;
 }
 
-.row {
+.restaurant-row, 
+.foodkiosk-row {
   margin-top: 25px;
 }
 
-.column {
+.restaurant-column,
+.foodkiosk-column {
   float: left;
   width: 33.33%;
   padding: 5px;
 }
 
-.button {
-  border-radius: 4px;
-  background-color: #f4511e;
+.btn-restaurant {
   border: none;
-  color: #FFFFFF;
-  text-align: center;
-  font-size: 16px;
-  padding: 10px;
-  width: 200px;
-  transition: all 0.5s;
-  cursor: pointer;
-  margin: 5px;
-}
-
-.button span {
-  cursor: pointer;
+  outline: 0;
   display: inline-block;
-  position: relative;
-  transition: 0.5s;
+  padding: 8px;
+  color: white;
+  background-color: #000;
+  text-align: center;
+  cursor: pointer;
+  width: 50%;
+  font-size: 18px;
 }
 
-.button span:after {
-  content: '\00bb';
-  position: absolute;
-  opacity: 0;
+.btn-subscribe {
+  border: none;
+  outline: 0;
+  display: inline-block;
+  padding: 8px;
+  color: white;
+  background-color: #000;
+  text-align: center;
+  cursor: pointer;
+  width: 100%;
+  font-size: 18px;
+}
+
+.btn-restaurant:hover {
+  opacity: 0.7;
+}
+
+.specialfoods-column-66 {
+  float: left;
+  width: 66%;
+  padding: 10px;
+  height: 515px;
+  h3, p {
+    font-size: 20px;
+    text-align: left;
+  }
+}
+
+.specialfoods-column-33 {
+  float: left;
+  width: 33%;
+  padding: 20px;
+}
+
+.img-specialfoods {
+  display: block;
+  height: auto;
+  max-width: 100%;
+}
+
+.btn-specialfoods {
+  border: none;
+  color: white;
+  padding: 14px 28px;
+  font-size: 16px;
+  cursor: pointer;
+  background-color: #04AA6D;
+  width: 200px;
+  float: left;
+}
+
+.specialfoods-overlay,
+.restaurant-overlay,
+.subscribe-overlay {
+  position: fixed;
   top: 0;
-  right: -20px;
-  transition: 0.5s;
-}
-
-.button:hover span {
-  padding-right: 25px;
-}
-
-.button:hover span:after {
-  opacity: 1;
+  bottom: 0;
+  left: 0;
   right: 0;
+  background: rgba(0, 0, 0, 0.7);
+  transition: opacity 500ms;
+  visibility: hidden;
+  opacity: 0;
+  z-index: 2;
+}
+
+.specialfoods-overlay:target,
+.restaurant-overlay:target,
+.subscribe-overlay:target {
+  visibility: visible;
+  opacity: 1;
+}
+
+.specialfoods-popup,
+.restaurant-popup,
+.subscribe-popup {
+  margin: 70px auto;
+  padding: 20px;
+  background: #fff;
+  border-radius: 5px;
+  width: 30%;
+  position: relative;
+  transition: all 5s ease-in-out;
+}
+
+.specialfoods-popup h2,
+.restaurant-popup h2,
+.subscribe-popup h2 {
+  margin-top: 0;
+  color: #333;
+  font-family: Tahoma, Arial, sans-serif;
+}
+.specialfoods-popup .close,
+.restaurant-popup .close,
+.subscribe-popup .close {
+  position: absolute;
+  top: 20px;
+  right: 30px;
+  transition: all 200ms;
+  font-size: 30px;
+  font-weight: bold;
+  text-decoration: none;
+  color: #333;
+}
+.specialfoods-popup .close:hover,
+.restaurant-popup .close:hover,
+.subscribe-popup .close:hover  {
+  color: #06D85F;
+}
+.specialfoods-popup .content,
+.restaurant-popup  .content,
+.subscribe-popup  .content {
+  max-height: 100%;
+  overflow: auto;
+}
+
+input[type=text], input[type=number], input[type=time], input[type=date], select {
+  width: 100%;
+  padding: 12px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  resize: vertical;
+}
+
+label {
+  padding: 12px 12px 12px 0;
+  display: inline-block;
+  font-size: 14px;
+}
+
+input[type=submit] {
+  background-color: #04AA6D;
+  color: white;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  float: right;
+}
+
+input[type=submit]:hover {
+  background-color: #45a049;
+}
+
+.specialfoods-contact-container,
+.restaurant-contact-container,
+.subscribe-contact-container {
+  border-radius: 5px;
+  background-color: #f2f2f2;
+  padding: 20px;
+}
+
+.specialfoods-contact-col-25,
+.restaurant-contact-col-25,
+.subscribe-contact-col-25 {
+  float: left;
+  width: 25%;
+  margin-top: 6px;
+}
+
+.specialfoods-contact-col-75,
+.restaurant-contact-col-75,
+.subscribe-contact-col-75 {
+  float: left;
+  width: 75%;
+  margin-top: 6px;
+}
+
+/* Clear floats after the columns */
+.specialfoods-contact-row::after, 
+.restaurant-contact-row::after,
+.subscribe-contact-row::after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+.subscription-cards {
+    width: 100%;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 1rem;
+    align-items: start;
+    justify-content: center;
+}
+
+.subscription-card {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  max-width: 350px;
+  margin: auto;
+  text-align: center;
+  font-family: arial;
+  li {
+    font-size: 16px;
+    text-align: center;
+    border-bottom: 1px solid #eee;
+    padding: 20px;
+  }
+}
+
+.subscription-card-img {
+  width: 100%;
+}
+
+.subscription-price {
+  color: grey;
+  font-size: 22px;
+}
+
+.subscription-card:hover {
+  box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+}
+
+
+/* Responsive layout - when the screen is less than 600px wide, make the two columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 700px) {
+  .specialfoods-contact-col-75, 
+  .specialfoods-contact-col-25, 
+  input[type=submit], 
+  .restaurant-contact-col-75, 
+  .restaurant-contact-col-25,
+  .subscribe-contact-col-75, 
+  .subscribe-contact-col-25 {
+    width: 100%;
+    margin-top: 0;
+  }
+  .specialfoods-popup, 
+  .restaurant-popup,
+  .subscribe-popup {
+    width: 70%;
+  }
+  .restaurant-cards,
+  .foodkiosk-cards,
+  .subscription-cards {
+    grid-template-columns: 1fr
+  }
+}
+
+@media screen and (max-width: 1000px) {
+  .specialfoods-column-66,
+  .specialfoods-column-33 {
+    width: 100%;
+    text-align: center;
+  }
+  .img-specialfoods {
+    margin: auto;
+  }
 }
 
 /* Clearfix (clear floats) */
-.row::after {
+.restaurant-row::after, .foodkiosk-row::after {
   content: "";
   clear: both;
   display: table;
-}
-
-@media (max-width: 800px) {
-  .cards {
-    grid-template-columns: 1fr
-  }
 }

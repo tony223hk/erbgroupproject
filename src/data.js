@@ -31,6 +31,16 @@ import snacksC3 from "/img/FoodKiosk/snacksC3.png";
 import snacksD1 from "/img/FoodKiosk/snacksD1.png";
 import snacksD2 from "/img/FoodKiosk/snacksD2.png";
 import snacksD3 from "/img/FoodKiosk/snacksD3.png";
+//================================================
+import specialfood1 from "/img/SpecialFood/food1.png";
+import specialfood2 from "/img/SpecialFood/food2.png";
+import specialfood3 from "/img/SpecialFood/food3.png";
+import specialfood4 from "/img/SpecialFood/food4.png";
+//================================================
+import subscription1 from "/img/subscription/subscription1.png";
+import subscription2 from "/img/subscription/subscription2.png";
+import subscription3 from "/img/subscription/subscription3.png";
+
 
 export const restaurants = [
     {   
@@ -149,7 +159,7 @@ export const foodkiosks = [
         itemprice3: 40,
     },
     {
-    id: 4,
+        id: 4,
         image: foodkiosk4,
         location: "High-tech centre",
         name: "SweetBytes",
@@ -165,3 +175,67 @@ export const foodkiosks = [
         itemprice3: 30,
     },
 ];
+
+export const specialfoods = [
+    {  
+        id: 1,
+        specialfoodsimg: specialfood1, 
+        title: "Kids meal",
+        description: "Here you can enjoy both adorable kids plates and substantial main dishes. However, you may also send requests to the restaurants by pressing the below button preferably 24 hours in advance. "
+    },
+    {  
+        id: 2,
+        specialfoodsimg: specialfood2, 
+        title: "Plant-based menu items",
+        description: "Plant-based meal is available in the park and at the hotels of the Cyberpunk Hong Kong. However, you may also send requests to the restaurants by pressing the below button preferably 24 hours in advance. "
+    },
+    {  
+        id: 3,
+        specialfoodsimg: specialfood3, 
+        title: "Halal Cuisine",
+        description: "Halal-certified food is available in the park and at the hotels of the Cyberpunk Hong Kong. However, you may send you concerns to the restaurants by pressing the below button preferably 24 hours in advance."
+    },
+    {  
+        id: 4,
+        specialfoodsimg: specialfood4, 
+        title: "Dietary requirements",
+        description: "Many Cyberpunk Hong Kong restaurants can accommodate the common food allergies. However, you may also send requests to the restaurants by pressing the below button preferably 24 hours in advance. "
+    },
+];
+
+export const subscription = [
+        {  
+        id: 1,
+        image: subscription1, 
+        title: "Copper",
+        price: "HK$599 per year",
+        advantage1:"Unlimited access for weekdays",
+        advantage2:"10% off car parking discount",
+        advantage3:"10% off shopping discount",
+        advantage4:"10% off hotel, food and Beverage discount",
+        advantage5:"Birthday offers to celebrate your birthday date",
+
+    },
+    {  
+        id: 2,
+        image: subscription2, 
+        title: "Sliver",
+        price: "HK$799 per year",
+        advantage1:"Unlimited access for all operations days",
+        advantage2:"15% off car parking discount",
+        advantage3:"15% off shopping discount",
+        advantage4:"15% off hotel, food and Beverage discount",
+        advantage5:"Birthday offers to celebrate your birthday month"
+    },
+    {  
+        id: 3,
+        image: subscription3, 
+        title: "Gold",
+        price: "HK$999 per year",
+        advantage1:"Unlimited access for all operations days",
+        advantage2:"30% off car parking discount",
+        advantage3:"30% off shopping discount",
+        advantage4:"30% off hotel, food and Beverage discount",
+        advantage5:"Birthday offers to celebrate your birthday month"
+    },
+]

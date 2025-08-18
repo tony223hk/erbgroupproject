@@ -4,28 +4,28 @@ const FoodKiosk=
   itemimage2, iteminfo2, itemprice2, 
   itemimage3, iteminfo3, itemprice3}) => {
   return (
-    <div class="card">
+    <div class="foodkiosk-card">
       <h2><b>{name}</b></h2>
       <p>{maininfo}</p>
-        <div class="card-img">
-          <img class="image" src={image} alt=""/>
+        <div class="foodkiosk-card-img">
+          <img class="foodkiosk-image" src={image} alt=""/>
           <p><i class="fa-solid fa-location-dot"></i>{location}</p>
         </div>  
-          <div class="card-container">
+          <div class="foodkiosk-card-container">
           <h3>Recomendations</h3>
-            <div class="row">
-              <div class="column">
-                <img class="itemimage" src={itemimage1} alt=""/>
+            <div class="foodkiosk-row">
+              <div class="foodkiosk-column">
+                <img class="foodkiosk-itemimage" src={itemimage1} alt=""/>
                 <li>{iteminfo1}</li>
                 <li>{itemprice1}</li>
               </div>
-              <div class="column">
-                <img class="itemimage" src={itemimage2} alt=""/>
+              <div class="foodkiosk-column">
+                <img class="foodkiosk-itemimage" src={itemimage2} alt=""/>
                 <li>{iteminfo2}</li>
                 <li>{itemprice2}</li>
               </div>
-            <div class="column">
-                <img class="itemimage" src={itemimage3} alt=""/>
+            <div class="foodkiosk-column">
+                <img class="foodkiosk-itemimage" src={itemimage3} alt=""/>
                 <li>{iteminfo3}</li>
                 <li>{itemprice3}</li>
               </div>

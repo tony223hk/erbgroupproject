@@ -6,7 +6,7 @@ const Restaurants = () => {
   return (
     <div className="restaurants" id="restaurants">
     <Title title='restaurant' subtitle='informations'/>
-      <div className="cards">
+      <div className="restaurant-cards">
         {restaurants.map((restaurant) => (
           <Restaurant key={restaurant.id} {...restaurant} />
         ))}

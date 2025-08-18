@@ -6,7 +6,7 @@ const FoodKiosks = () => {
   return (
     <div className="foodkiosks" id="foodkiosks">
     <Title title='foodkiosks' subtitle='informations'/>
-      <div className="cards">
+      <div className="foodkiosk-cards">
         {foodkiosks.map((foodkiosk) => (
           <FoodKiosk key={foodkiosk.id} {...foodkiosk} />
         ))}
