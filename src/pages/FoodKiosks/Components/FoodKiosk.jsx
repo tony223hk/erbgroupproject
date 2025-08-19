@@ -4,28 +4,28 @@ const FoodKiosk=
   itemimage2, iteminfo2, itemprice2, 
   itemimage3, iteminfo3, itemprice3}) => {
   return (
-    <div class="foodkiosk-card">
+    <div className="foodkiosk-card">
       <h2><b>{name}</b></h2>
       <p>{maininfo}</p>
-        <div class="foodkiosk-card-img">
-          <img class="foodkiosk-image" src={image} alt=""/>
-          <p><i class="fa-solid fa-location-dot"></i>{location}</p>
+        <div className="foodkiosk-card-img">
+          <img className="foodkiosk-image" src={image} alt=""/>
+          <p><i className="fa-solid fa-location-dot"></i>{location}</p>
         </div>  
-          <div class="foodkiosk-card-container">
+          <div className="foodkiosk-card-container">
           <h3>Recomendations</h3>
-            <div class="foodkiosk-row">
-              <div class="foodkiosk-column">
-                <img class="foodkiosk-itemimage" src={itemimage1} alt=""/>
+            <div className="foodkiosk-row">
+              <div className="foodkiosk-column">
+                <img className="foodkiosk-itemimage" src={itemimage1} alt=""/>
                 <li>{iteminfo1}</li>
                 <li>{itemprice1}</li>
               </div>
-              <div class="foodkiosk-column">
-                <img class="foodkiosk-itemimage" src={itemimage2} alt=""/>
+              <div className="foodkiosk-column">
+                <img className="foodkiosk-itemimage" src={itemimage2} alt=""/>
                 <li>{iteminfo2}</li>
                 <li>{itemprice2}</li>
               </div>
-            <div class="foodkiosk-column">
-                <img class="foodkiosk-itemimage" src={itemimage3} alt=""/>
+            <div className="foodkiosk-column">
+                <img className="foodkiosk-itemimage" src={itemimage3} alt=""/>
                 <li>{iteminfo3}</li>
                 <li>{itemprice3}</li>
               </div>
