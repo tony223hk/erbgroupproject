@@ -65,16 +65,65 @@ const Subscribe=
               <input type="date" id="date" name="birthday" required/>
             </div>
           </div>
+          <div className="subscribe-contact-row">
+            <div className="subscribe-contact-col-25">
+              <label for="fname">Accept Cards</label>
+            </div>
+            <div className="subscribe-contact-col-75">
+              <div class="subscribe-contact-icon-container">
+                <i class="fa-brands fa-cc-visa"></i>
+                <i class="fa-brands fa-cc-amex"></i>
+                <i class="fa-brands fa-cc-mastercard"></i>
+                <i class="fa-brands fa-cc-discover"></i>
+              </div>
+            </div>
+            </div>
+            <div className="subscribe-contact-row">
+              <div className="subscribe-contact-col-25">
+                <label for="cname">Name on Card</label>
+              </div>  
+              <div className="subscribe-contact-col-75">  
+                <input type="text" id="cname" name="cardname" placeholder="Chan Tai Man"/>
+              </div>
+            </div>
+            <div className="subscribe-contact-row">
+              <div className="subscribe-contact-col-25">
+                <label for="ccnum">Credit card no.</label>
+              </div>
+              <div className="subscribe-contact-col-75">
+                <input type="number" id="ccnum" name="cardnumber" placeholder="1111222233334444"/>
+              </div>  
+            </div>
+            <div className="subscribe-contact-row">
+              <div className="subscribe-contact-col-20">
+                <label for="expmonth">Exp Month</label>
+              </div>
+              <div className="subscribe-contact-col-10"> 
+                <input type="number" id="expmonth" name="expmonth" placeholder="9"/>
+              </div>
+              <div className="subscribe-contact-col-20">
+                <label for="expyear">Exp Year</label>
+               </div>
+              <div className="subscribe-contact-col-20">
+                <input type="number" id="expyear" name="expyear" placeholder="2018"/>
+              </div>
+              <div className="subscribe-contact-col-20">
+                <label for="cvv">CVV</label>
+              </div>
+              <div className="subscribe-contact-col-10"> 
+                <input type="number" id="cvv" name="cvv" placeholder="352"/>
+              </div>
+            </div>
           <br></br>
           <div className="subscribe-contact-row">
             <input type="submit" value="Submit"/>
           </div>
-          </form>
+        </form>
         </div>
 		  </div>
 	  </div>
   </div>
-   </div>
+  </div>
   );
 };
 

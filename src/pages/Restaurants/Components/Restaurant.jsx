@@ -4,28 +4,28 @@ const Restaurant =
   itemimage2, iteminfo2, itemprice2, 
   itemimage3, iteminfo3, itemprice3}) => {
   return (
-    <div class="restaurant-card">
+    <div className="restaurant-card">
       <h2><b>{name}</b></h2>
       <p>{maininfo}</p>
-        <div class="restaurant-card-img">
-          <img class="restaurant-image" src={image} alt=""/>
-          <p><i class="fa-solid fa-location-dot"></i>{location}</p>
+        <div className="restaurant-card-img">
+          <img className="restaurant-image" src={image} alt=""/>
+          <p><i className="fa-solid fa-location-dot"></i>{location}</p>
         </div>  
-          <div class="restaurant-card-container">
+          <div className="restaurant-card-container">
           <h3>Recomendations</h3>
-            <div class="restaurant-row">
-              <div class="restaurant-column">
-                <img class="restaurant-itemimage" src={itemimage1} alt=""/>
+            <div className="restaurant-row">
+              <div className="restaurant-column">
+                <img className="restaurant-itemimage" src={itemimage1} alt=""/>
                 <li>{iteminfo1}</li>
                 <li>{itemprice1}</li>
               </div>
-              <div class="restaurant-column">
-                <img class="restaurant-itemimage" src={itemimage2} alt=""/>
+              <div className="restaurant-column">
+                <img className="restaurant-itemimage" src={itemimage2} alt=""/>
                 <li>{iteminfo2}</li>
                 <li>{itemprice2}</li>
               </div>
-            <div class="restaurant-column">
-                <img class="restaurant-itemimage" src={itemimage3} alt=""/>
+            <div className="restaurant-column">
+                <img className="restaurant-itemimage" src={itemimage3} alt=""/>
                 <li>{iteminfo3}</li>
                 <li>{itemprice3}</li>
               </div>
@@ -49,7 +49,7 @@ const Restaurant =
                 </div>
               </div>
               <div className="restaurant-contact-row">
-                <div class="restaurant-contact-col-25">
+                <div className="restaurant-contact-col-25">
                   <label for="contact">Contact</label>
                 </div>
                 <div className="restaurant-contact-col-75">
