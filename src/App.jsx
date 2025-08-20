@@ -5,12 +5,11 @@ import FoodKiosks from './pages/FoodKiosks/FoodKiosks'
 import SpecialFoods from './pages/SpecialFoods/SpecialFoods'
 import SpecialFoods_Request from './pages/SpecialFoods/Components/SpecialFood_Request'
 import Subscription from './pages/Subscription/Subscription'
-import Subscribe_Form from './pages/Subscription/Components/Subscribe_Form'
+import Subscription_Form from './pages/Subscription/Components/Subscription_Form'
 import Login from './pages/Login/Login'
 
 
 function App() {
-
   return (
     <>
       <Restaurants />
@@ -19,10 +18,10 @@ function App() {
       <SpecialFoods />
       <SpecialFoods_Request />
       <Subscription />
-      <Subscribe_Form />
+      <Subscription_Form />
       <Login />
     </>
   )
 }
 
-export default App
+export default App;

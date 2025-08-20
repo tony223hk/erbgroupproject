@@ -15,12 +15,15 @@ const Login = () => {
           <p>Password</p>
           <input type="password" placeholder="Enter Password" name="psw" required/>
          </div>
-         <div className="form-group">
-          Remember me<input type="checkbox" name="remember"/>
-         </div>
-         <button type="submit" className="button">Login</button>
-        </form>
-      </div>
+        <label className="form-control">
+          <input type="radio" name="radio" />
+          Remember me
+        </label>
+        <br></br>
+        <br></br>
+        <button type="submit" className="button">Login</button>
+      </form>
+    </div>
     </div>
     );
   };

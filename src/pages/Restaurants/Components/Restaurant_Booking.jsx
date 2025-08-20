@@ -11,11 +11,12 @@ const Restaurant_Booking = () => {
             </div>
             <div className="form-group">
               <p>Mobile Number</p>
-              <input type="text" id="mobiler" name="mobiler" placeholder="Your mobile number" required/>
+              <input type="text" id="mobile1" name="mobile1" placeholder="Your mobile number" required/>
             </div>
             <div className="form-group">
               <p>Selected Restaurant</p>
               <select id="restaurantname" name="restaurantname">
+                <option value="Lyonrice">Pixelfood</option>
                 <option value="Griddiner">Griddiner</option>
                 <option value="Synthfood">Synthfood</option>
                 <option value="Lyonrice">Lyonrice</option>

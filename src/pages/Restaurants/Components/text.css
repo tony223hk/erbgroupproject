@@ -1,0 +1,82 @@
+* {
+    background-color: #000;
+}
+.projects-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 30px;
+}
+
+.project-card {
+    position: relative;
+    overflow: hidden;
+    cursor: pointer;
+}
+
+.project-card h3 {
+   font-family: 'Audiowide', sans-serif;
+   font-weight: 400;
+   color: #FFF;
+   text-transform: uppercase;
+   letter-spacing: 2px;
+   margin-bottom: 15px;
+   position: relative;
+   z-index: 1;
+}
+
+.project-card p {
+    position: relative;
+    z-index: 1;
+    color: #FFF;
+}
+
+.project-card::before {
+    content: '';
+    position: absolute;
+    top: -50%;
+    left: -50%;
+    width: 200%;
+    height: 200%;
+    background: linear-gradient(45deg, transparent, var(--primary), transparent);
+    transform: rotate(45deg);
+    transition: all 0.5s ease;
+    opacity: 0;
+}
+.glass-card {
+    background: rgba(255, 255, 255, 0.05);
+    backdrop-filter: blur(10px);
+    border-radius: 20px;
+    padding: 30px;
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    transition: all 0.3s ease;
+    margin-bottom: 30px;
+    position: relative;
+    overflow: hidden;
+}
+
+.glass-card::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-image: 
+                linear-gradient(rgba(0, 255, 255, 0.1) 1px, transparent 1px),
+                linear-gradient(90deg, rgba(0, 255, 255, 0.1) 1px, transparent 1px);
+    background-size: 20px 20px;
+    opacity: 0;
+    transition: opacity 0.3s ease;
+    pointer-events: none;
+ }
+
+.glass-card:hover::after {
+    opacity: 1;
+}
+
+.glass-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 20px 40px rgba(0, 255, 255, 0.2);
+    border-color: var(--primary);
+}
+

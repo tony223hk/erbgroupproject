@@ -1,45 +1,45 @@
-import restaurant1 from "/img/Restaurant/restaurant1.png";
-import restaurant2 from "/img/Restaurant/restaurant2.png";
-import restaurant3 from "/img/Restaurant/restaurant3.jpeg";
-import restaurant4 from "/img/Restaurant/restaurant4.jpeg";
-import foodA1 from "/img/Restaurant/foodA1.png";
-import foodA2 from "/img/Restaurant/foodA2.png";
-import foodA3 from "/img/Restaurant/foodA3.png";
-import foodB1 from "/img/Restaurant/foodB1.png";
-import foodB2 from "/img/Restaurant/foodB2.png";
-import foodB3 from "/img/Restaurant/foodB3.png";
-import foodC1 from "/img/Restaurant/foodC1.png";
-import foodC2 from "/img/Restaurant/foodC2.png";
-import foodC3 from "/img/Restaurant/foodC3.png";
-import foodD1 from "/img/Restaurant/foodD1.png";
-import foodD2 from "/img/Restaurant/foodD2.png";
-import foodD3 from "/img/Restaurant/foodD3.png";
+import restaurant1 from "/img/Restaurant/restaurant1.webp";
+import restaurant2 from "/img/Restaurant/restaurant2.webp";
+import restaurant3 from "/img/Restaurant/restaurant3.webp";
+import restaurant4 from "/img/Restaurant/restaurant4.webp";
+import foodA1 from "/img/Restaurant/foodA1.webp";
+import foodA2 from "/img/Restaurant/foodA2.webp";
+import foodA3 from "/img/Restaurant/foodA3.webp";
+import foodB1 from "/img/Restaurant/foodB1.webp";
+import foodB2 from "/img/Restaurant/foodB2.webp";
+import foodB3 from "/img/Restaurant/foodB3.webp";
+import foodC1 from "/img/Restaurant/foodC1.webp";
+import foodC2 from "/img/Restaurant/foodC2.webp";
+import foodC3 from "/img/Restaurant/foodC3.webp";
+import foodD1 from "/img/Restaurant/foodD1.webp";
+import foodD2 from "/img/Restaurant/foodD2.webp";
+import foodD3 from "/img/Restaurant/foodD3.webp";
 //================================================
-import foodkiosk1 from "/img/FoodKiosk/kiosk1.png";
-import foodkiosk2 from "/img/FoodKiosk/kiosk2.png";
-import foodkiosk3 from "/img/FoodKiosk/kiosk3.png";
-import foodkiosk4 from "/img/FoodKiosk/kiosk4.png";
-import snacksA1 from "/img/FoodKiosk/snacksA1.png";
-import snacksA2 from "/img/FoodKiosk/snacksA2.png";
-import snacksA3 from "/img/FoodKiosk/snacksA3.png";
-import snacksB1 from "/img/FoodKiosk/snacksB1.png";
-import snacksB2 from "/img/FoodKiosk/snacksB2.png";
-import snacksB3 from "/img/FoodKiosk/snacksB3.png";
-import snacksC1 from "/img/FoodKiosk/snacksC1.png";
-import snacksC2 from "/img/FoodKiosk/snacksC2.png";
-import snacksC3 from "/img/FoodKiosk/snacksC3.png";
-import snacksD1 from "/img/FoodKiosk/snacksD1.png";
-import snacksD2 from "/img/FoodKiosk/snacksD2.png";
-import snacksD3 from "/img/FoodKiosk/snacksD3.png";
+import foodkiosk1 from "/img/FoodKiosk/kiosk1.webp";
+import foodkiosk2 from "/img/FoodKiosk/kiosk2.webp";
+import foodkiosk3 from "/img/FoodKiosk/kiosk3.webp";
+import foodkiosk4 from "/img/FoodKiosk/kiosk4.webp";
+import snacksA1 from "/img/FoodKiosk/snacksA1.webp";
+import snacksA2 from "/img/FoodKiosk/snacksA2.webp";
+import snacksA3 from "/img/FoodKiosk/snacksA3.webp";
+import snacksB1 from "/img/FoodKiosk/snacksB1.webp";
+import snacksB2 from "/img/FoodKiosk/snacksB2.webp";
+import snacksB3 from "/img/FoodKiosk/snacksB3.webp";
+import snacksC1 from "/img/FoodKiosk/snacksC1.webp";
+import snacksC2 from "/img/FoodKiosk/snacksC2.webp";
+import snacksC3 from "/img/FoodKiosk/snacksC3.webp";
+import snacksD1 from "/img/FoodKiosk/snacksD1.webp";
+import snacksD2 from "/img/FoodKiosk/snacksD2.webp";
+import snacksD3 from "/img/FoodKiosk/snacksD3.webp";
 //================================================
-import specialfood1 from "/img/SpecialFood/food1.png";
-import specialfood2 from "/img/SpecialFood/food2.png";
-import specialfood3 from "/img/SpecialFood/food3.png";
-import specialfood4 from "/img/SpecialFood/food4.png";
+import specialfood1 from "/img/SpecialFood/food1.webp";
+import specialfood2 from "/img/SpecialFood/food2.webp";
+import specialfood3 from "/img/SpecialFood/food3.webp";
+import specialfood4 from "/img/SpecialFood/food4.webp";
 //================================================
-import subscription1 from "/img/subscription/subscription1.png";
-import subscription2 from "/img/subscription/subscription2.png";
-import subscription3 from "/img/subscription/subscription3.png";
+import subscription1 from "/img/subscription/subscription1.webp";
+import subscription2 from "/img/subscription/subscription2.webp";
+import subscription3 from "/img/subscription/subscription3.webp";
 
 
 export const restaurants = [
@@ -213,7 +213,7 @@ export const subscription = [
         advantage2:"10% off car parking discount",
         advantage3:"10% off shopping discount",
         advantage4:"10% off hotel, food and Beverage discount",
-        advantage5:"Birthday offers to celebrate your birthday date",
+        advantage5:"Birthday offers to celebrate your western birthday date",
 
     },
     {  

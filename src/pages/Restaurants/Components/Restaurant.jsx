@@ -8,7 +8,7 @@ const Restaurant =
       <h2><b>{name}</b></h2>
       <p>{maininfo}</p>
         <div className="restaurant-card-img">
-          <img className="restaurant-image" src={image} alt=""/>
+            <img className="restaurant-image" src={image} alt=""/>
           <p><i className="fa-solid fa-location-dot"></i>{location}</p>
         </div>  
           <div className="restaurant-card-container">
